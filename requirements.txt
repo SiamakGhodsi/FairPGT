@@ -1,0 +1,12 @@
+# install torch first, matching your CUDA (see README), then: pip install -r requirements.txt
+torch_geometric>=2.5
+pymetis>=2023.1
+numpy
+scipy
+scikit-learn
+pandas
+pyyaml
+tabulate
+matplotlib
+networkx
+pytest

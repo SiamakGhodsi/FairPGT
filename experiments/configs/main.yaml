@@ -1,0 +1,21 @@
+# Main benchmark: every method, every dataset, 5 seeds, same epoch budget, last epoch.
+name: main
+datasets: [nba, german, lastfm, facebook_large, credit, pokec_n, pokec_z]
+seeds: [0, 1, 2, 3, 4]
+epochs: 200
+selection: last
+models:
+  fairpgt: {}
+  dmon: {}
+  sdcn: {}
+  ccgcn: {}
+  scgc: {}
+  dinknet: {}
+  diffpool: {}
+  mincutpool: {}
+  dmon_sp: {}
+  fairgc_zhang: {}
+  fairgp: {}
+  fairgt: {}
+  sfairsc: {}
+  ifairsc: {}

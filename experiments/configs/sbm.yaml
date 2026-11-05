@@ -1,0 +1,15 @@
+# Stress test: alignment between communities and sensitive groups from independent
+# (align 0) to identical (align 1), with group-proxy features.
+name: sbm
+datasets: [sbm_align0.0_proxy1.0, sbm_align0.25_proxy1.0, sbm_align0.5_proxy1.0,
+           sbm_align0.75_proxy1.0, sbm_align1.0_proxy1.0,
+           sbm_align0.0_proxy0.0, sbm_align0.5_proxy0.0]
+seeds: [0, 1, 2]
+epochs: 200
+models:
+  fairpgt: {}
+  fairpgt-no-fair: {base: fairpgt, lambda_grp: 0, lambda_par: 0}
+  fairpgt-grp-only: {base: fairpgt, lambda_par: 0}
+  fairpgt-par-only: {base: fairpgt, lambda_grp: 0}
+  dmon_sp: {}
+  sfairsc: {}

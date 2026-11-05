@@ -1,0 +1,9 @@
+# Trade-off curves: one weight varied at a time, others at their defaults.
+name: sensitivity
+datasets: [nba, german, lastfm]
+seeds: [0, 1, 2]
+epochs: 200
+grid:
+  fairpgt-par: {base: fairpgt, lambda_par: [0.0, 0.1, 0.3, 1.0, 3.0, 10.0]}
+  fairpgt-grp: {base: fairpgt, lambda_grp: [0.0, 0.1, 0.3, 1.0, 3.0, 10.0]}
+  fairpgt-info: {base: fairpgt, lambda_info: [0.0, 0.3, 1.0, 3.0]}

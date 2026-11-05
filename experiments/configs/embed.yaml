@@ -1,0 +1,12 @@
+# Seed-0 reruns of selected baselines that save embeddings (for the embedding figure and the S-probe).
+# Same protocol and hyperparameters as main.yaml; only the saved outputs differ.
+name: embed
+datasets: [nba, lastfm, sbm_align1.0_proxy1.0]
+seeds: [0]
+epochs: 200
+selection: last
+models:
+  dmon: {}
+  sfairsc: {}
+  fairgp: {}
+  fairgt: {}

@@ -1,0 +1,13 @@
+# 2x2 fairness ablation plus component ablations, same seeds and budget as main.
+name: ablation
+datasets: [nba, german, lastfm, facebook_large, credit, pokec_n, pokec_z]
+seeds: [0, 1, 2, 3, 4]
+epochs: 200
+models:
+  fairpgt: {}                                              # both fairness terms
+  fairpgt-no-fair: {base: fairpgt, lambda_grp: 0, lambda_par: 0}
+  fairpgt-grp-only: {base: fairpgt, lambda_par: 0}
+  fairpgt-par-only: {base: fairpgt, lambda_grp: 0}
+  fairpgt-no-routing: {base: fairpgt, routing: false}
+  fairpgt-dec-target: {base: fairpgt, target: dec}
+  fairpgt-collapse-reg: {base: fairpgt, reg: col}

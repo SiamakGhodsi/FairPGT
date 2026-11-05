@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+cache/
+runs/
+logs/
+paper_data/
+paper_out/
+*.zip
+*.pt
+*.npy
+*.npz
+!tools/*.json

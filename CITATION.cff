@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering"
+authors:
+  - family-names: Ghodsi
+    given-names: Siamak
+  - family-names: Seyedi
+    given-names: Amjad
+  - family-names: Tahmasebi
+    given-names: Sahar
+  - family-names: Ntoutsi
+    given-names: Eirini
+  - family-names: Auer
+    given-names: Sören
+license: MIT
+repository-code: "https://github.com/SiamakGhodsi/FairPGT"
+preferred-citation:
+  type: article
+  title: "FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering"
+  authors:
+    - family-names: Ghodsi
+      given-names: Siamak
+    - family-names: Seyedi
+      given-names: Amjad
+    - family-names: Tahmasebi
+      given-names: Sahar
+    - family-names: Ntoutsi
+      given-names: Eirini
+    - family-names: Auer
+      given-names: Sören
+  journal: "TBD"
+  year: 2026

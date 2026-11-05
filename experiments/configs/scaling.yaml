@@ -1,0 +1,7 @@
+# Cost vs. number of partitions (time and peak GPU memory are recorded per run).
+name: scaling
+datasets: [lastfm, facebook_large, credit, pokec_n]
+seeds: [0]
+epochs: 50
+grid:
+  fairpgt-np: {base: fairpgt, n_partitions: [1, 2, 4, 8, 16, 32, 64]}
